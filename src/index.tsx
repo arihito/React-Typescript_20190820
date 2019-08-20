@@ -3,10 +3,31 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { rows } from './data'
+import Thead from './table/thead'
+import Tbody from './table/tbody'
+import UseMemo from './useMemo'
+import UseCallback from './useCallback'
+import UseEffect from './useEffect'
+import UseRef from './useRef'
+import UseReducer from './useReducer'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <>
+    <App />
+    <div className="wrapper">
+      <h2>健康に関する調査</h2>
+      <table>
+        <Thead />
+        <Tbody rows={rows}/>
+      </table>
+      <UseMemo />
+      <UseCallback />
+      <UseEffect />
+      <UseRef />
+      <UseReducer />
+    </div>
+  </>
+  , document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  serviceWorker.unregister();
