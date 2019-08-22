@@ -12,7 +12,7 @@ const Component: React.FC = () => {
     <>
       <h2>useEffect</h2>
       <p>マウント後の毎秒をインクリメントするような従来のコンポーネントライフサイクル処理に適している</p>
-      <div>{count}</div>
+      <div><strong>{count}</strong></div>
       <pre>{`
       useEffect(() => {
         const interval = setInterval(() => {

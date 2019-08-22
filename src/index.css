@@ -48,3 +48,12 @@ strong {
   font-size: 40px;
   font-weight: bold;
 }
+.clickArea {
+  float: left;
+  width: 50%;
+  height: 100px;
+  background: linear-gradient(90deg,#ddd, #eee);
+  cursor: pointer;
+}
+.clickArea:hover {background: linear-gradient(90deg,#ccc, #ddd);}
+.clickArea:active {background: linear-gradient(90deg,#fdd, #fee);}

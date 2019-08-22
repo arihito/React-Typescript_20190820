@@ -9,8 +9,8 @@ type Props = {
 const Component: React.FC<Props> = (props) => {
   return (
     <div style={{overflow:'hidden'}}>
-      <div style={{float:'left',width:'50%',height:100,background:'#ccf'}} onClick={props.handleClick}></div>
-      <div style={{float:'left',width:'50%',height:100,background:'#fcc'}} onClick={props.handleClick}></div>
+      <div className="clickArea" onClick={props.handleClick}></div>
+      <div className="clickArea" onClick={props.handleClick}></div>
       <p>X: <strong>{props.clickedX}</strong>px | Y: <strong>{props.clickedY}</strong>px</p>
     </div>
   )

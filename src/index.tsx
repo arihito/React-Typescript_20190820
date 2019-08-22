@@ -16,7 +16,7 @@ ReactDOM.render(
   <>
     <App />
     <div className="wrapper">
-      <h2>健康に関する調査</h2>
+      <h2>TheadとTbodyによるコンポーネントの切り分けとmapによるデータ取得「健康に関する調査」</h2>
       <table>
         <Thead />
         <Tbody rows={rows}/>
